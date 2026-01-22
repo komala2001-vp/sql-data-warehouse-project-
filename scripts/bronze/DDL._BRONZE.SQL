@@ -1,3 +1,12 @@
+/*
+=============================================
+Create Database and Schema
+=============================================
+script purpose:
+This script creates a new Database named 'DataWareHouse' after checking if already exists.
+if the database exists, it is dropped and recreated. additinally, the scripts sets three schemas
+within the database: 'bronze',
+
 create or alter procedure bronze.load_bronze as
 begin
    DECLARE @START_TIME DATETIME, @END_TIME DATETIME,@BATCH_START_TIME DATETIME, @BATCH_end_time datetime;
